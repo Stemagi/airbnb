@@ -3,6 +3,7 @@
 }
 body{
   margin: 0;
+  font-family: 'Poppins';
 }
 .nav{
   width: 550px;
@@ -16,25 +17,21 @@ body{
   max-width: 100px;
 }
 .main-section{
+  padding: 20px;
   width: 550px;
+  flex-direction: column;
 }
 .img-section{
-  /* padding: 26px 77px; */
-  margin: 26px 77px;
-  margin-bottom: 0;
-  width: 400px;
+  max-width: 400px;
+  align-self: center;
+}
+.heading, .content{
+    padding-left: 16px;
+    line-height: 110%;
 }
 .heading{
-  margin: 0;
-  padding: 36px 32px;
-  padding-bottom: 0;
-  font-family: Poppins;
   font-size: 36px;
-  line-height: 110%;
 }
 .content{
-  padding-left: 36px;
   max-width: 360px;
-  font-family: 'Poppins';
-  line-height: 110%;
 }
