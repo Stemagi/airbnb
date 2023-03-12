@@ -20,10 +20,11 @@ body{
   padding: 20px;
   width: 550px;
   flex-direction: column;
+  display: flex;
 }
 .img-section{
-  max-width: 400px;
   align-self: center;
+  max-width: 400px;
 }
 .heading, .content{
     padding-left: 16px;
@@ -34,4 +35,17 @@ body{
 }
 .content{
   max-width: 360px;
+  margin-bottom: 0;
+}
+.cards-section{
+  width: 550px;
+  padding: 37px;
+}
+.card-img{
+  height: 235px;
+  border-radius: 5%;
+  padding-bottom: 0; 
+}
+.star{
+  height: 14px;
 }
