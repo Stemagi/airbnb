@@ -4,16 +4,10 @@ import Main from "./Main";
 import Card from "./card";
 import data from "./data";
 export default function App(){
-  const elementCards = data.map(data =>{
+  const elementCards = data.map(item =>{
     return <Card  
-    key={data.id}
-    coverImg={data.coverImg}
-    title={data.title}
-    reviewCount={data.reviewCount}
-    rating={data.rating}
-    price={data.price}
-    location={data.location}
-    openSpots={data.openSpots}
+    key={item.id}
+    item={item}
     />
   })
   return(
