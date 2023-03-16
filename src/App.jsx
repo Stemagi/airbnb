@@ -6,12 +6,14 @@ import data from "./data";
 export default function App(){
   const elementCards = data.map(data =>{
     return <Card  
+    key={data.id}
     coverImg={data.coverImg}
     title={data.title}
     reviewCount={data.reviewCount}
     rating={data.rating}
     price={data.price}
     location={data.location}
+    openSpots={data.openSpots}
     />
   })
   return(
@@ -19,14 +21,6 @@ export default function App(){
       <Navbar />
       <Main />
       <section className="cards-list">{elementCards}</section>
-      {/* <Card
-      img="katie-zaferes.png"
-      alt="katie-zaferes"
-      title="Life Lessons with Katie Zaferes"
-      rewiewCount="(6)"
-      price="136"
-      country="Ukraine"
-      /> */}
     </div>
   )
 }
